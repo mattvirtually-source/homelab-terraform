@@ -1,0 +1,15 @@
+proxmox_endpoint = "https://pve.example.com:8006/"
+proxmox_insecure   = true
+
+# Export PROXMOX_VE_API_TOKEN before plan/apply (see variables.tf / provider docs).
+
+proxmox_node     = "pve"
+template_vm_id   = 9000
+disk_datastore   = "local-lvm"
+network_bridge   = "vmbr0"
+cloud_init_user  = "ubuntu"
+ssh_public_key   = "ssh-ed25519 AAAA...your-key... comment"
+
+# For static IPs on nodes, set ip_mode = "static" and ipv4_cidr in locals.tf, then set:
+# ipv4_gateway = "192.168.1.1"
+# dns_servers  = ["192.168.1.1", "1.1.1.1"]
