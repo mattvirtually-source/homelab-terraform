@@ -14,5 +14,6 @@ terraform.rc
 
 # Secrets — copy terraform.tfvars.example → terraform.tfvars (gitignored)
 terraform.tfvars
+scripts/.proxmox-admin.local.ps1
 *.auto.tfvars
 !terraform.tfvars.example

@@ -21,7 +21,7 @@ variable "template_vm_id" {
 
 variable "disk_datastore" {
   type        = string
-  description = "Datastore ID for cloned disks (e.g. local-lvm, ceph-rbd)."
+  description = "Proxmox storage ID for VM disks and cloud-init (e.g. vm-pool for Ceph RBD, local-lvm for node LVM)."
 }
 
 variable "network_bridge" {
